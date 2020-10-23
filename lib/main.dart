@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'app.dart';
 import 'di/injector.dart';
@@ -11,6 +12,11 @@ void main() => mainCommon();
 
 Future<void> mainCommon() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight,
+  ]);
 
   print('[MESSAGE] Started Configuring dependencies');
   await AppInjector().configure();
