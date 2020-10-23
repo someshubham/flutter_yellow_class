@@ -29,7 +29,7 @@ Future<void> mainCommon() async {
   print('Starting Application');
   runZonedGuarded<Future<void>>(
     () async {
-      runApp(YellowCamera());
+      runApp(MyApp());
     },
     _reportError,
   );

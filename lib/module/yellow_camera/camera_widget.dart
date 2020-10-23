@@ -39,11 +39,9 @@ class _YellowCameraState extends State<YellowCamera> {
     if (!_cameraController.value.isInitialized) {
       return Container();
     }
-    return MaterialApp(
-      home: Scaffold(
-        body: AspectRatio(
-            aspectRatio: 3 / 4, child: CameraPreview(_cameraController)),
-      ),
+    return AspectRatio(
+      aspectRatio: 16 / 9,
+      child: CameraPreview(_cameraController),
     );
   }
 }

@@ -26,6 +26,7 @@ dependencies:
   camera: ^0.5.8+10
   cupertino_icons: ^1.0.0
   get_it: ^5.0.1
+  matrix_gesture_detector: ^0.1.0
 
 dev_dependencies:
   flutter_test:

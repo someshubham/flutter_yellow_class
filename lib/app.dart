@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'module/gesture_detector/move_camera_gesture.dart';
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
@@ -8,6 +10,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: MoveTextDemo(),
+    );
   }
 }
